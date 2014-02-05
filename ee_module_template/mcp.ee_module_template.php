@@ -53,6 +53,26 @@ class {{ module_name_ucfirst }_mcp
 
         return $data;
     }
+
+    /**
+     * Set page title
+     *
+     * @access private
+     * @param string $page
+     * @return void
+     */
+
+    private function _cp_page_title($page)
+    {
+        if (version_compare(APP_VER, '2.6.0', '<'))
+        {
+            $this->EE->cp->set_variable('cp_page_title', $page);
+        }
+        else
+        {
+            $this->EE->view->cp_page_title = $page;
+        }
+    }
 }
 /* End of file mcp.{{ module_name_lcase }}.php */
 /* Location: ./system/expressionengine/third_party/{{ module_name_lcase }}/mcp.{{ module_name_lcase }}.php */
