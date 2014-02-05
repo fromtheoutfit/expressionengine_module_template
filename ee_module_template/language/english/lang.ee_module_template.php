@@ -12,8 +12,8 @@ $lang = array(
 
     // Module Details
     '{{ module_name_lcase }}_module_name'           => '{{ module_name_full }}',
-    '{{ module_name_lcase }}_module_description'    => '{{ module_description}}',
-    '{{ module_name_lcase }}_mcp_index'             => '{{ module_description}}',
+    '{{ module_name_lcase }}_module_description'    => '{{ module_description }}',
+    '{{ module_name_lcase }}_mcp_index'             => '{{ module_description }}',
 //
 //
     ''                             => ''
