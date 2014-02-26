@@ -10,7 +10,7 @@
 
 if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class {{ module_name_ucfirst }_mcp
+class {{ module_name_ucfirst }}_mcp
 {
 
     private $site_id = 1;
